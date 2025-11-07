@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>A Gift For You 💐💝</title>  
+
+  <!-- Pindahan CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>  
+<body>  
+<audio id="bgMusic" autoplay>
+  <source src="data:audio/mp3;base64,penjaga_hati_base64.txt" type="audio/mp3">
+</audio>
+
+<script>
+  // biar musik otomatis play saat user berinteraksi
+  document.addEventListener("click", function () {
+    document.getElementById("bgMusic").play();
+  });
+</script>
+  <div class="container">  
+    <div id="giftScreen" class="gift-screen">  
+      <h1 class="gift-title">A GIFT FOR YOU 🎁</h1>  
+      <div class="gift-box-container">  
+        <div class="gift-lid" id="giftLid"><div class="bow"></div></div>  
+        <div class="gift-box"><div class="ribbon-v"></div><div class="ribbon-h"></div></div>  
+      </div>  
+      <div class="slider-container">  
+        <div class="slider-track">  
+          <div class="slider-text">Geser untuk membuka →</div>  
+          <div class="slider-button" id="sliderButton">👉</div>  
+        </div>  
+      </div>  
+    </div>  
+
+    <div id="messageScreen" class="message-screen hidden">  
+      <div class="message-content">  
+        <div class="emoji-decoration" id="emoji">💝</div>  
+        <p class="message-text" id="messageText"></p>  
+      </div>  
+      <button class="next-button" id="nextButton">Lanjut 💕</button>  
+      <div class="progress-dots" id="progressDots"></div>  
+    </div>
+  </div>    
+
+  <!-- Pindahan JS -->
+  <script src="script.js"></script>
+
+</body>  
+</html>
